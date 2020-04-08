@@ -4,19 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCC: Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <head>
+        <nav id="navbar">
+            <header>Python Documentation</header>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#Hello_World">Hello World</a>
+            <a class="nav-link" href="#Variables">Variables</a>
+            <a class="nav-link" href="#Data_Types">Data Types</a>
+            <a class="nav-link" href="#if_else_Statement">if else Statement</a>
+            <a class="nav-link" href="#while_Loops">while Loops</a>
+            <a class="nav-link" href="#Reference">Reference</a>
+        </nav>
+    </head>
+
     <main id="main-doc">
-        <section id="introduction" class="main-section">
+        <section id="Introduction" class="main-section">
             <header>Introduction</header>
-            <p></p>
+            <p>Python is a very popular programming language, first released in 1991. It is seen as a good language to start learning programming with, due to it being highly readable</p>
+            <p>Python works on multiple different platforms, and can be used for many tasks, such as:</p>
+            <ul>
+                <li>back-end web development</li>
+                <li>software development</li>
+                <li>system scripting</li>
+            </ul>
+            <p>For this documentation, all work will be done in the Python IDLE that comes bundled with the Python intallation.</p>
         </section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
+
+        <section id="Hello_World" class="main-section">
+            <header>Hello World</header>
+            <p>Python is an interpreted language, which means that as the developer, you write in Python (.py) files and then put those files into the python interpreter to be executed</p>
+            <p>To create a python file that prints the words "Hello World", we can write the following in our .py file:</p>
+            <pre>
+                print("Hello World")
+            </pre>
+            <p>Now select "Run > Run Module" in the toolbar, or press F5 to run the program. The output should read:</p>
+            <pre>
+                Hellow World
+            </pre>
+            <p>Congratulations, you have just written your first Python program.</p>
+        </section>
+
+        <section id="Variables" class="main-section">
+            <header>Variables</header>
+            <p>Variables are containers for storing data values.</p>
+            <p>Unlike other programming languages, Python has no command for declaring variables.</p>
+            <p>Variables are just created the moment you first assign a value to it.</p>
+            <p>There are certain rules for naming variables in Python. They are:</p>
+            <ul>
+                <li>Variable names must start with either a letter or the underscore (_) character</li>
+                <li>Variable names cannot start with a number</li>
+                <li>Variable names can only contain alpha-numeric characters and underscores</li>
+                <li>Variable names are case sensitive</li>
+            </ul>
+        </section>
+
+        <section id="Data_Types" class="main-section">
+            <header>Data Types</header>
+            <p>Python comes with a few data types built-in by default. They are:</p>
+            <ul>
+                <li>Text (<code>str</code>)</li>
+                <li>Numbers (<code>int</code>, <code>float</code>, <code>complex</code>)</li>
+                <li>Sequences (<code>list</code>, <code>tuple</code>, <code>range</code>)</li>
+                <li>Mappings (<code>dict</code>)</li>
+                <li>Sets (<code>set</code>, <code>frozenset</code>)</li>
+                <li>Boolean values (<code>bool</code>)</li>
+                <li>Binary values (<code>bytes</code>, <code>bytearray</code>, <code>memoryview</code>)</li>
+            </ul>
+            <p>Using these data types, we can create very powerful functions with our programs.</p>
+        </section>
+
+        <section id="if_else_Statement" class="main-section">
+            <header>if else Statement</header>
+            <p>Use the if statement to execute a statement if the logical condition is true.</p>
+            <pre>
+                if condition:
+                    statement
+            </pre>
+            <p>An optional else statement can also be used to execute if the logical condition is false.</p>
+            <pre>
+                if condition:
+                    statement_when_true
+                else:
+                    statement_when_false
+            </pre>
+            <p>Else if statements can also be used between the if and else statements to say "if the previous conditions were not true, then try this condition".</p>
+            <pre>
+                if condition_1:
+                    statement_when_condition1_true
+                elif condition_2:
+                    statement_when_condition1_false_condition2_true
+                else:
+                    statement_when_condition1_false_condition2_false
+            </pre>
+        </section>
+
+        <section id="while_Loops" class="main-section">
+            <header>while Loops</header>
+            <p>If you need to execute a block of code multiple times, a while loop can come in very handy.</p>
+            <p>A while loop will execute a block of code as long as a condition is true.</p>
+            <pre>
+                while condition:
+                    code
+            </pre>
+            <p>It is usually a good idea to have an exit condition in the code inside the while block as otherwise the block of code will run infinitely.</p>
+            <p>The break statement can stop and exit out of the loop, even if the condition is still true.</p>
+        </section>
+
+        <section id="Reference" class="main-section">
+            <header>Reference</header>
+            <p>All information and documentation in this page was taken from <a href="https://www.w3schools.com/python/default.asp">w3schools.com</a>.</p>
+        </section>
     </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
