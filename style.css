@@ -20,6 +20,9 @@ ol, ul {
 }
 
 /* Actual CSS from here */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
 nav {
     border: red solid 1px;
@@ -30,13 +33,34 @@ nav {
     position: fixed;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 
 #navbar header {
     align-self: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 20px;
+    border-bottom: black solid 1px;
+}
+
+#navbar a {
+    border-bottom: black solid 1px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 20px;
 }
 
 main {
     border: blue solid 1px;
     margin-left: 300px;
+}
+
+main header {
+    font-weight: 400;
+}
+
+main p {
+    font-weight: 300;
 }
